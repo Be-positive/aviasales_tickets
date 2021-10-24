@@ -1,0 +1,98 @@
+body {
+  background-color: #e5e6e7;
+}
+/* Logo */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em 0em;
+}
+
+/* Main part */
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Left side*/
+main .transfersNumber {
+  background-color: #f6f6f6;
+  margin: 1.2em;
+  padding: 1em;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+  height: 9em;
+}
+
+main .transfersNumber .transfer h4 {
+  font-family: "Ivar Headline", "Ivar Headline Subset", "Times New Roman", serif;
+  font-weight: lighter;
+  margin-top: 0em;
+}
+
+/* Right side, 2 buttons, cheepest and quickest way */
+main .tickets .flightOptions {
+  display: flex;
+  flex-direction: row;
+}
+
+main .tickets .flightOptions h3 {
+  padding: 1em 1em;
+  background-color: #f6f6f6;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  cursor: pointer;
+  font-weight: lighter;
+}
+
+main .tickets .flightOptions .bestWay1 {
+  color: #f6f6f6;
+  background-color: dodgerblue;
+}
+
+/* Right side, ticket list */
+
+main .tickets .ticketsList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 27.5em;
+  margin-left: -2.5em;
+  margin-top: -1em;
+}
+
+main .tickets .ticketsList li {
+  background-color: #f6f6f6;
+  margin-top: 0.5em;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+  padding: 0em 0em 2em 1em;
+}
+
+main .tickets .ticketsList li div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -1em;
+}
+
+main .tickets .ticketsList li div h3 {
+  color: dodgerblue;
+}
+
+main .tickets .ticketsList li div div {
+  margin-right: 3em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -0.7em;
+  padding: 0em 0em;
+}
+
+main .tickets .ticketsList li div div p {
+  margin-top: -1.5em;
+}
+
+main .tickets .ticketsList li div div h5 {
+  color: rgb(160, 158, 158);
+}
