@@ -19,6 +19,7 @@ const zeroTransfers = document.querySelector('.zeroTransfers')
 const oneTransfer = document.querySelector('.oneTransfer')
 const twoTransfers = document.querySelector('.twoTransfers')
 const threeTransfers = document.querySelector('.threeTransfers')
+const airlinesLogo = document.querySelectorAll('.airlinesLogo')
 
 fetch('https://front-test.beta.aviasales.ru/search')
     .then(res => {
@@ -54,6 +55,9 @@ fetch('https://front-test.beta.aviasales.ru/search')
                     
                     // -------Tickets prices --------             
                     price[i].innerHTML = `${newData[i].price} Р`
+
+                    // -- Airlines logo --
+                    airlinesLogo[i].src = `https://pics.avs.io/99/36/${newData[i].carrier}.png`
     
                     // -- Arrival and departure time TO some direction --             
                     let totalArrMin = parseInt(`${newData[i].segments[0].date}`.substr(11, 2)) * 60 + parseInt(`${newData[i].segments[0].date}`.substr(14, 2))

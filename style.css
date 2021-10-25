@@ -76,8 +76,14 @@ main .tickets .ticketsList li div {
   margin-bottom: -1em;
 }
 
-main .tickets .ticketsList li div h3 {
+main .tickets .ticketsList li div .price {
   color: dodgerblue;
+  font-size: 1.5em;
+}
+main .tickets .ticketsList li div .airlinesLogo {
+  height: 3em;
+  margin-left: 10em;
+  margin-top: 0.7em;
 }
 
 main .tickets .ticketsList li div div {
